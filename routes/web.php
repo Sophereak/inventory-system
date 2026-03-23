@@ -26,6 +26,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Stock Movements
     Route::resource('stock-movements', StockMovementController::class);
 
+    // Reports
+    Route::get('/reports', [App\Http\Controllers\ReportController::class, 'index'])->name('reports.index');
 });
 
 // Profile
@@ -35,4 +37,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
