@@ -7,8 +7,8 @@ use App\Http\Controllers\StockMovementController;
 use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
-    return redirect()->route('dashboard');
-});
+    return view('welcome');
+})->name('welcome');
 
 Route::middleware(['auth', 'verified'])->group(function () {
 
