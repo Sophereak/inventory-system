@@ -2,6 +2,9 @@
 
 A stock management system built with Laravel 12, Blade, and Tailwind CSS.
 
+## Live Demo
+🌐 [inventory-system-main-hxrk9f.free.laravel.cloud](https://inventory-system-main-hxrk9f.free.laravel.cloud)
+
 ## Features
 - Authentication (Login/Register)
 - Category Management
